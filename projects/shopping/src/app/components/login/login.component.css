@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: left;
+    align-content: center;  
+    height: 240px;
+}
+
+form{
+    border: 2px solid darkcyan;
+    padding: 20px;
+    box-shadow: 2px 2px 2px black;
+}

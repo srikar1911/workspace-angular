@@ -1,0 +1,49 @@
+<!-- <div class="container-fluid">
+    <h2>Products Table</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tile</th>
+                <th>Price</th>
+                <th>Index</th>
+                <th>Even</th>
+                <th>Odd</th>
+                <th>First</th>
+                <th>Last</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr [ngClass]="{'odd-style' : o, 'even-style' : e, 'first-class' : f, 'last-class' : l}" *ngFor="let item of Products; let i = index; let f = first; let l = last; let e = even; let o = odd">
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.price}}</td>
+                <td>{{i}}</td>
+                <td>{{e}}</td>
+                <td>{{o}}</td>
+                <td>{{f}}</td>
+                <td>{{l}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<div class="container-fluid">
+    <h2>Products <button (click)="AddNewRecord()">Add New</button></h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Products; trackBy: TrackChanges">
+                <th>{{item.Name}}</th>
+                <th>{{item.Price}}</th>
+            </tr>
+        </tbody>
+    </table>    
+
+</div>
