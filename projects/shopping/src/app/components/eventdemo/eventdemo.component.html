@@ -1,0 +1,11 @@
+<div class="container-fluid mt-3">
+    <h2>Registration</h2>
+    <form>
+        <dl>
+            <dt>User ID</dt>
+            <dd><input (keyup)="VerifyUserId($event)" type="text"></dd>
+            <dd  [ngClass]="{'text-succes' : IsUserValid}">{{UserMessage}}</dd>
+        </dl>
+    </form>
+
+</div> 

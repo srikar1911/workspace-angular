@@ -16,6 +16,9 @@ import { IfdemoComponent } from './components/ifdemo/ifdemo.component';
 import { FordemoComponent } from './components/fordemo/fordemo.component';
 import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 import { ForpropertiesComponent } from './components/forproperties/forproperties.component';
+import { EventdemoComponent } from './components/eventdemo/eventdemo.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { ForpropertiesComponent } from './components/forproperties/forproperties
     IfdemoComponent,
     FordemoComponent,
     ShoppingcartComponent,
-    ForpropertiesComponent
+    ForpropertiesComponent,
+    EventdemoComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     FormsModule,
@@ -40,6 +46,6 @@ import { ForpropertiesComponent } from './components/forproperties/forproperties
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [ForpropertiesComponent]
+  bootstrap: [ParentComponent]
 })
 export class AppModule { }
